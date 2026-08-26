@@ -1,0 +1,56 @@
+:root {
+  --bg: #0b0c0f;
+  --surface: #16181d;
+  --surface-2: #1d2027;
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #edeef0;
+  --text-muted: #9aa1ac;
+  --ember: #ff6b35;
+  --ember-dim: #7a3a20;
+  --steel: #3d8bfd;
+  --steel-dim: #1f3f6e;
+
+  --font-display: 'Space Grotesk', 'Arial Black', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--steel);
+  outline-offset: 3px;
+}
