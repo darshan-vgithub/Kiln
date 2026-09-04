@@ -8,7 +8,7 @@ const links = [
   { label: 'About', to: { path: '/', hash: '#about' } },
   { label: 'Process', to: { path: '/', hash: '#process' } },
   { label: 'Contact', to: { path: '/', hash: '#contact' } },
-  { label: 'Careers', to: '/careers' },
+  // { label: 'Careers', to: '/careers' },
 ]
 
 function close() {
